@@ -164,7 +164,7 @@
 							<!--<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>-->
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<!-- <form method="post" action="#">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Nome</label>
@@ -182,8 +182,21 @@
 										<ul class="actions">
 											<li><a href="" class="button submit">Enviar</a></li>
 										</ul>
-									</form>
-<!-- Teste -->
+									</form> -->
+									<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Nome Completo</label>
+    <input type="text" name="name" id="full-name" placeholder="Escreva aqui seu nome completo..." required="">
+    <label for="email-address">E-mail</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="use somente letras minúsculas" required="">
+    <label for="message">Sua Mensagem</label>
+    <textarea rows="5" name="message" id="message" placeholder="Escreva aqui sua mensagem..." required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+  </fieldset>
+  <input type="submit" value="Enviar">
+</form>
+									
+									<!-- Teste -->
 <li>
 											<h3>Social</h3>
 											<ul class="icons">
@@ -236,7 +249,7 @@
 					<!--<ul class="menu">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>-->
-					<p>Copyright © <script>document.write(new Date().getFullYear());</script> All Rights Reserved.</p>
+					<p>Copyright © <script>document.write(new Date().getFullYear());</script> Editado por Em#D Oficial - Template por <a href="http://html5up.net">HTML5 UP</a></p>
 				</div>
 			</footer>
 

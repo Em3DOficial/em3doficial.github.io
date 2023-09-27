@@ -3522,36 +3522,15 @@ input, select, textarea {
 
 /* Sidebar */
 /* Pulse em3d */
-@-webkit-keyframes ef-pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
+.pulse {
+    -webkit-animation: pulsate 2.5s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.3;
 }
-@keyframes ef-pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-}
-.ef-pulse-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-}
-.ef-pulse-grow:autofocus, .ef-pulse-grow:active /*.ef-pulse-grow:hover,*/ {
-  -webkit-animation-name: ef-pulse-grow;
-  animation-name: ef-pulse-grow;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
+@-webkit-keyframes pulsate {
+    0% { opacity: 0.3; }
+    50% { opacity: 1.0; }
+    100% { opacity: 0.3; }
 }
 /* Pulse em3d */
 	#sidebar {

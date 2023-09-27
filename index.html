@@ -192,7 +192,7 @@
   /* customize formbutton below*/     
   formbutton("create", {
     action: "https://formspree.io/f/maygprbp",
-    title: "Mande sua mensagem?",
+    title: "Mande sua mensagem!",
     fields: [
       { 
         type: "email", 
@@ -207,16 +207,18 @@
         name: "message",
         placeholder: "Escreva sua mensagem aqui...",
       },
-      { type: "submit" }      
+      { type: "submit",
+        label: "Enviar",
+        name: "submit",}      
     ],
     styles: {
       title: {
-        backgroundColor: "#2c2048"
+        backgroundColor: "#b74e91"
       },
       button: {
         backgroundColor: "#b74e91"
       },
-      formbutton: {
+      body": {
         backgroundColor: "#b74e91"
       },
       input: {

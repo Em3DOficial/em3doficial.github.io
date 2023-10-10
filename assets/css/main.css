@@ -326,6 +326,14 @@ input, select, textarea {
 	.align-right {
 		text-align: right;
 	}
+/* Cursor */
+.container{
+	width: 100%;
+	height: 100%;
+
+	cursor: url("./images/scissor-64.png"), auto;
+}
+/* Cursor */
 
 /* Row */
 

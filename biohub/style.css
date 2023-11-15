@@ -53,6 +53,17 @@ body {
     margin: 27px auto;
 }
 
+.frase {
+    /* position: relative; */
+    margin-top: 0%;
+    color: var(--accentColor);
+    font-size: 1rem;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+}
+
 .link {
     position: relative;
     background-color: transparent;
@@ -98,7 +109,7 @@ body {
     background: linear-gradient(90deg, var(--bgColor), var(--accentColor), var(--bgColor));
     background-repeat: no-repeat;
     background-size: 80%;
-    animation: animate 3s linear var(--delay) infinite;
+    animation: animate 5s linear var(--delay) infinite;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
